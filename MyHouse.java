@@ -16,6 +16,8 @@ public class MyHouse
     private Square door;
     private Circle handle;
     private Square window2;
+    private Square window3;
+    private Tree tree1;
 
     /**
      * The job of a constructer is to initialize all the instance variables.
@@ -30,6 +32,8 @@ public class MyHouse
         door = new Square();
         handle = new Circle();
         window2 = new Square();
+        window3 = new Square();
+        tree1 = new Tree(0,0);
         // run the method to draw the house
         drawHouse();
  
@@ -106,14 +110,41 @@ public class MyHouse
         sun.moveLeft();
         sun.moveUp();
         sun.moveLeft();
+        sun.moveHorizontal(20);
         
-        //put a detail on the window
+        //put details on the window 1
         
         window2.makeVisible();
         window2.moveHorizontal(70);
         window2.moveVertical(40);
         window2.changeColor("white");
-        window2.changeSize(7);
+        window2.changeSize(20);
+        window2.moveHorizontal(40);
+        window2.moveVertical(50);
+        window2.changeSize(14);
+        window2.moveHorizontal(3);
+        
+        //put details on the window 2
+        window3.makeVisible();
+        window3.moveHorizontal(70);
+        window3.moveVertical(40);
+        window3.changeColor("white");
+        window3.changeSize(20);
+        window3.moveHorizontal(40);
+        window3.moveVertical(50);
+        window3.changeSize(14);
+        window3.moveHorizontal(5);
+        
+   
+        
+       
+        
+        
+        
+        
+        
+        
+       
         
        
        
